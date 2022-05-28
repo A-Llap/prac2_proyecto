@@ -22,7 +22,8 @@ var bodyParser = require('body-parser');
 
 
 //Abrir conexion con DB
-var mongoDB = 'mongodb://127.0.0.1:27017/dbAlumnos';
+var mongoDB = 'mongodb://mongo:27017/dbAlumnos';
+//var mongoDB = 'mongodb://127.0.0.1:27017/dbAlumnos';
 mongoose.connect(mongoDB,{useNewUrlParser:true,useUnifiedTopology:true});
 mongoose.Promise = global.Promise;
 var dbP = mongoose.connection;
